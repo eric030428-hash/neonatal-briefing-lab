@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>신생아 호흡곤란 브리핑</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="briefing.js" type="module"></script>
+</head>
+<body>
+  <header><span>성장과 발달</span><span id="version">증례 브리핑 v2.0</span></header>
+  <main>
+    <h1>신생아 호흡곤란 브리핑</h1>
+    <p class="intro">가상 증례를 선택하고 관찰된 소견을 근거로 감별합니다.</p>
+    <div class="board">
+      <nav aria-label="가상 증례">
+        <h2>증례 선택</h2>
+        <div id="case-list"></div>
+      </nav>
+      <section class="record" aria-labelledby="case-title">
+        <h2 id="case-title"></h2>
+        <p id="urgency" role="status" hidden></p>
+        <dl id="observations"></dl>
+        <p id="insufficient" role="status" hidden>정보 부족 · 영상과 기본 배경이 없어 진단의 우선순위를 정할 수 없습니다.</p>
+        <button id="summarize">학습 브리핑 보기</button>
+        <section id="summary" aria-live="polite" hidden></section>
+      </section>
+    </div>
+    <section class="sources" aria-labelledby="source-title">
+      <h2 id="source-title">대조 자료</h2>
+      <ul id="sources"></ul>
+    </section>
+  </main>
+</body>
+</html>
